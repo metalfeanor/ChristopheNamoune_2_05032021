@@ -434,11 +434,13 @@ span {
 
 /* FOOTER */
 .footer {
+  background-color: var(--background-color);
+}
+.footer-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 20px 0 40px 20px;
-  background-color: var(--background-color);
 }
 
 .footer-item {
@@ -559,7 +561,7 @@ span {
     justify-content: center;
   }
   /* footer */
-  .footer {
+  .footer-section {
     padding-left: 70px;
   }
 }
@@ -686,7 +688,7 @@ span {
   }
 
   /* footer */
-  .footer {
+  .footer-section {
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
@@ -705,7 +707,7 @@ span {
   .logding-card {
     width: 30%;
   }
-  .footer {
+  .footer-section {
     width: 73%;
   }
   .footer-item:not(:nth-child(1)) {
