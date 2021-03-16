@@ -10,6 +10,7 @@
   --main-color: #0065fc;
   --main-color-light: #deebff;
   --background-color: #f2f2f2;
+  scroll-behavior: smooth;
 }
 
 body {
