@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/0cf2c74cda.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
     <title>Reservia</title>
   </head>
   <body>
@@ -21,8 +21,8 @@
         />
       </div>
       <div class="navbar">
-        <a href="#lodging">Hébergements</a>
-        <a href="#activities">Activités</a>
+        <a href="#lodging" class="link1">Hébergements</a>
+        <a href="#activities" class="link2">Activités</a>
       </div>
       <div class="cta">
         <a href="#">S'inscrire</a>
@@ -33,7 +33,7 @@
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
         <div class="search-container">
-          <form>
+          <form class="search__form">
             <i class="fas fa-map-marker-alt icon"></i>
             <input
               type="text"
@@ -48,20 +48,29 @@
           </form>
         </div>
         <div class="btn-filter">
-          <h2>Filtres</h2>
-          <button type="submit">
-            <span><i class="fas fa-money-bill-wave filter-icon"></i></span
-            >Économique
-          </button>
-          <button type="submit">
-            <span><i class="fas fa-child filter-icon"></i></span>Familial
-          </button>
-          <button type="submit">
-            <span><i class="fas fa-heart filter-icon"></i></span>Romantique
-          </button>
-          <button type="submit">
-            <span><i class="fas fa-dog filter-icon"></i></span>Animaux autorisés
-          </button>
+          <div class="btn-filter__title"><h2>Filtres</h2></div>
+          <div class="btn-filter__tag1">
+            <button type="submit">
+              <span><i class="fas fa-money-bill-wave filter-icon"></i></span
+              >Économique
+            </button>
+          </div>
+          <div class="btn-filter__tag2">
+            <button type="submit">
+              <span><i class="fas fa-child filter-icon"></i></span>Familial
+            </button>
+          </div>
+          <div class="btn-filter__tag3">
+            <button type="submit">
+              <span><i class="fas fa-heart filter-icon"></i></span>Romantique
+            </button>
+          </div>
+          <div class="btn-filter__tag4">
+            <button type="submit">
+              <span><i class="fas fa-dog filter-icon"></i></span>Animaux
+              autorisés
+            </button>
+          </div>
         </div>
         <div class="filter-info">
           <div>
