@@ -131,8 +131,6 @@ span {
 .search__form {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 /*LEFT ICON */
 .icon {
@@ -236,6 +234,7 @@ span {
 /* LODGING SECTION */
 .lodging-section {
   order: 2;
+  padding: 0 16px;
 }
 .lodging-section h2 {
   padding: 20px 10px;
@@ -319,7 +318,7 @@ span {
 .most-popular {
   width: 100%;
   display: grid;
-  justify-content: center;
+  padding: 0 16px;
   background-color: var(--background-color);
 }
 .most-popular_title {
@@ -335,6 +334,7 @@ span {
 /* card dimension */
 .most-popular_card {
   min-height: 145px;
+  max-height: 200px;
 }
 /* select img */
 .mp_img1 {
@@ -512,6 +512,7 @@ span {
   /* SEARCH BAR */
   .search__form {
     margin-top: 20px;
+    justify-content: center;
   }
   .submit-icon {
     display: none;
@@ -555,11 +556,31 @@ span {
   .logding-card {
     width: 46%;
   }
+  /* most popular section */
+  .most-popular {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .most-popular_title {
+    width: 100%;
+  }
+  .most-popular_card {
+    width: 47%;
+  }
+
   /*activites section */
   .activites {
-    width: 70%;
-    margin-left: 15%;
-    justify-content: center;
+    /*width: 70%;
+    margin-left: 15%;*/
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .activites h2 {
+    width: 100%;
+  }
+  .activites-card {
+    width: 47%;
   }
   /* footer */
   .footer-section {
@@ -621,8 +642,6 @@ span {
 
   /*lodging section */
   .lodging-section {
-    order: 1;
-    flex: 2;
     padding: 40px;
     background-color: var(--background-color);
     border-radius: 18px;
@@ -634,13 +653,16 @@ span {
     padding-left: 30px;
     font-weight: normal;
   }
+  /*dimension lodging card*/
+  .logding-card {
+    width: 45%;
+  }
 
   /* most popular section */
   .most-popular {
-    order: 2;
-    flex: 1;
+    order: 1;
     border-radius: 18px;
-    padding: 0 10px 25px 10px;
+    padding: 40px;
   }
 
   /*activites section */
@@ -656,6 +678,7 @@ span {
   }
   .activites-card {
     height: 100%;
+    width: 100%;
   }
   /* grid position */
   .activites h2 {
@@ -699,14 +722,26 @@ span {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1224px) {
   .cta {
     padding: 0;
     margin-left: 20px;
   }
+  .lodging-section {
+    order: 1;
+    flex: 2;
+  }
   /*dimension lodging card*/
   .logding-card {
     width: 30%;
+  }
+  .most-popular {
+    display: grid;
+    flex: 1;
+    padding: 40px 25px 25px 25px;
+  }
+  .most-popular_card {
+    width: 100%;
   }
   .footer-section {
     width: 73%;
