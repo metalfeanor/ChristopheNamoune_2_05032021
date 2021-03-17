@@ -318,7 +318,7 @@ span {
 .most-popular {
   width: 100%;
   display: grid;
-  padding: 0 16px;
+  padding: 20px 16px;
   background-color: var(--background-color);
 }
 .most-popular_title {
@@ -736,9 +736,8 @@ span {
     width: 30%;
   }
   .most-popular {
-    display: grid;
     flex: 1;
-    padding: 40px 25px 25px 25px;
+    padding: 40px 3%;
   }
   .most-popular_card {
     width: 100%;
