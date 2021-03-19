@@ -209,6 +209,7 @@ span {
   cursor: pointer;
   font-weight: bold;
   font-size: 15px;
+  outline: none;
 }
 
 .btn-filter button:hover {
